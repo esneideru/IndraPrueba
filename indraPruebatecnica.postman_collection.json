@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "89b9fcaf-9f75-4962-9779-005f31c485b8",
+		"name": "indraPruebatecnica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "estadoCeldas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lstCasas\": [1,1,1,0,1,1,1,1],\r\n    \"dias\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44368/api/estadoceldas/verficarEstado",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44368",
+					"path": [
+						"api",
+						"estadoceldas",
+						"verficarEstado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paquetesCamiones",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lstPaquetes\": [10, 60, 40, 35, 20],\r\n    \"tamanioCamion\": 90\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44368/api/Camiones/verficarCarga",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44368",
+					"path": [
+						"api",
+						"Camiones",
+						"verficarCarga"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
